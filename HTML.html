@@ -6,22 +6,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Teste</title>
 	<style>
+		h1:hover{
+			background: rgba(0,0,127,0.3);
+		}
 		h1 {
-			background: blue;
+			background: rgba(0,0,255);
 			
 	 	}
-		p{
-	 		background: green;
-		}
-		#titulo-um {
-            		background: yellow;
-       		}
-		#texto {
-			background: yellow;
-		}
 		#titulo-um {
             		background: pink;
        		}
+		#titulo-um:hover{
+            		background: rgba(0,0,127,0.3);
+       		}
+
+		p{
+	 		background: green;
+		}
+		#texto {
+			background: yellow;
+		}
 		
 		.Teste{
 			background: brown;
@@ -44,8 +48,91 @@
 		.NO {
 			text-decoration:none;
 		}
+		nav li a{
+			bakcground: pink;
+			height : 50px;
+			color: rgba(255,0,255);
+			text-decoration:none;
+			cursor: url('H:\brawl_pass.png');
+		}
+		nav ul{
+			display : flex;
+			list-style: none;
+			justify-content: center;
+		}
+		.Mudar{
+			padding: 10px 20px;
+			background: rgba(255,127,255);
+		}
+		.Mudar:hover{
+			background: rgba(127,64,127,0.5);
+		}
+		table{
+			border-collapse: collapse;
+		}
+		table td, table th{
+			border: 1px solid  #ccc;
+			padding: 3px;
+			text-align: center;
+		}
+		
+		table th{
+			background: gray;
+		}
+		table th:hover{
+			background: cyan;
+		}
+		table td:hover{
+			background: rgba(64,32,64,0.25);
+		}
+		#nome {
+			height: 40px;
+			width: 300px;
+			border: 3px solid black;
+    			margin: 0 auto;
+			display: block;
+		
+		}
+		#nome:hover {
+			background: rgba(32,16,32,0.13);
+			border: 3px solid rgba(150,16,222);
+		}
+		.Fundo_branco{
+			background: rgba(0,0,0,0);
+		}
+		.caixa_especial {
+			height: 40px;
+			whidth: auto;
+			background: rgba(30,60,90);
+		}
+		.caixa_especial:hover{
+			height: 80px;
+			whidth: auto;
+			background: rgba(15,30,45,0.5);
+		}
+
+		.caixa_especial #p_caixa_especial{
+			display: flex;
+    			align-items: center;
+    			width: 100%;
+    			height: 100%;
+		}
+		.caixa_especial #p_caixa_especial:hover{
+			display: flex;
+    			align-items: center;
+    			height: 100%;
+			width: 100%;
+		}
+
+
+
 	</style>
 	<link rel="icon" href="C:\Users\Hilster\Pictures\F5IdMbpWgAA1Ctw.png" type="image/x-icon">
+
+
+
+
+
 </head>
 
 <body>
@@ -68,6 +155,7 @@
 
 	<pre id="codigo">
 	<code>
+
 import pandas as pd
 
 # Ler os dados do arquivo TXT
@@ -79,7 +167,7 @@ dados.to_excel('Cosmeticos.xlsx', index=False)  # Isso criará um arquivo Excel 
 	</code></pre>
 
 	<p><span style="color:red;">Oi</span> meu nome é Hilster</p>
-	<div class="teste">Oi, não sei o que isso faz 'div'</div>
+	<div class="teste">Teste 'div'</div>
 	<h1>H1</h1>
 	<h2>H2</h2>
 	<h3>H3</h3>
@@ -119,9 +207,228 @@ dados.to_excel('Cosmeticos.xlsx', index=False)  # Isso criará um arquivo Excel 
 	<br>
 	<img src="C:\Users\Hilster\Pictures\F05uN9eXoAE4o2X.png" alt="Teste" width="320" height="320">
 	<img src="C:\Users\Hilster\Pictures\F05uN99XsAMkAiw.png" alt="Teste 2" width="320" height="320">
+	
+	
+	
+	<nav>
+		<ol  type="1" start="13">
+			<li>Item 1</li>
+		</ol>
+		<ul>
+			<li class="Mudar">Item 1</li>
+			<li class="Mudar">Item 2</li>
+			<li class="Mudar">Item 3</li>
+		</ul>
+		<dl>
+			<dt> Star power</dt>
+			<dd> Descrição</dd>
+		</dl>
 
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Home</a></li>
+		
+	</nav>
+	<div class="caixa_especial">
+		<p id="p_caixa_especial" class="Fundo_branco">
+			Aqui vem meu texto
+		</p>
+	</div>
+
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th>Coluna 1</th>
+				<th>Coluna 2</th>
+				<th>Coluna 3</th>
+				<th>Coluna 4</th>
+				<th>Coluna 5</th>
+			</tr>
+		</thead>
+		<body>
+			<tr>	<th>Linha 0</th>
+				<td>Célula 1</th>
+				<td>Célula 2</th>
+				<td>Célula 3</th>
+				<td>Célula 4</th>
+				<td>Célula 5</th>
+			</tr>
+			<tr>
+				<th>Linha 1</th>
+				<td colspan="2">Célula 1/2</th>
+				<td>Célula 3</th>
+				<td>Célula 4</th>
+				<td>Célula 5</th>
+			</tr>
+			<tr>
+				<th>Linha 2</th>
+				<td colspan="3">Célula 1/2/3</th>
+				<td>Célula 4</th>
+				<td>Célula 5</th>
+			</tr>
+			<tr>
+				<th>Linha 3</th>
+				<td>Célula 1</th>
+				<td colspan="3">Célula 2/3/4</th>
+				<td>Célula 5</th>
+			</tr>
+			<tr>
+				<th>Linha 4</th>
+				<td>Célula 1</th>
+				<td>Célula 2</th>
+				<td colspan="3">Célula 3/4/5</th>	
+			</tr>
+			<tr>
+				<th>Linha 5</th>
+				<td>Célula 1</th>
+				<td>Célula 2</th>
+				<td>Célula 3</th>
+				<td colspan="2">Célula 4/5</th>	
+			</tr>
+			<tr>
+				<th>Linha 6</th>
+				<td>Célula 1</th>
+				<td>Célula 2</th>
+				<td>Célula 3</th>
+				<td>Célula 4</th>
+				<td>Célula 5</th>
+			</tr>
+		</body>
+	</table>
+	<section>
+		<form action="#" method="get" target="_blank" autocomplete="off">
+			<p>Digite seu Nome</p>
+
+			<p  id="campo_nome" class="Fundo_branco">
+				<label for="nome"> Nick: </label>
+				<input type="text" id="nome" name="nome" placeholder="Digite o seu nome" value="SENHOR_H" required>
+			</p>
+
+			<p class="Fundo_branco">
+			<label for="dev"> Sou um dev </label>
+				<input type="checkbox" id="dev" name="dev" value="true" checked>
+			</p>
+
+			<p class="Fundo_branco">
+			<label for="SrH"> Sou o SENHOR_H </label>
+				<input type="checkbox" id="SrH" name="SrH" value="true" checked required>
+			</p>
+
+
+			<p class="Fundo_branco">
+				<label for="dev_c">Sou programador C</label>
+				<input type="radio" id="dev_c" name="feliz" value="True">
+				<br>
+				<label for="dev_java">Sou programador Java</label>
+				<input type="radio" id="dev_java" name="feliz" value="True">
+				<br>
+				<label for="feliz">Sou feliz</label>
+				<input type="radio" id="feliz" name="feliz" value="True" checked>
+			</p>
+
+
+			<p class="Fundo_branco">
+				<label for="problemas_mentais">Não tenho problemas mentais</label checked>
+				<input type="radio" id="problemas_mentais" name="problemas_mentais" value="True">
+				<br>
+				<label for="psicologia">Estudo Psicologia</label>
+				<input type="radio" id="psicologia" name="problemas_mentais" value="True">
+				<br>
+				<label for="matematica">Estudo Matemática</label>
+				<input type="radio" id="matematica" name="problemas_mentais" value="True" >
+			</p>
+
+
+			<p class="Fundo_branco">
+
+				<label for="nascimento">Data de nascimento:</label>
+				<input type="date" id="nascimento" name="nascimento" value="2001-08-08">
+				<br>
+				<label for="data">Data:</label>
+				<input type="datetime-local" id="data" name="data" value="2001-08-08T17:15">
+				<br>
+				<label for="hora">Data:</label>
+				<input type="time" id="hora" name="hora" value="17:15:33">
+				
+			</p>
+
+			<p class="Fundo_branco">
+				<label for="cor">Cor</label>
+				<input type="color" id="cor" name="cor" value="#003d66">
+			</p>
+
+			<p class="Fundo_branco">
+				<label for="email">Seu e-mail:</label>
+				<input type="email" id="email" name="email" value="hilsterb.santos@gmail.com" placeholder="email@gmail.com" required>
+			</p>
+
+			<p class="Fundo_branco">
+				<label for="file">Um arquivo:</label>
+				<input type="file" id="arquivo" name="arquivo" accept=".png, .svg, image/*" multiple>
+			</p>
+
+			<p class="Fundo_branco">
+				<label for="senha">Digite sua senha:</label>
+				<input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+			</p>
+
+
+			<p class="Fundo_branco">
+				<label for="range">range:</label>
+				<input type="range" id="range" name="range" min="0" max="9" step="0.5" value="0">
+			</p>
+
+			
+			<p class="Fundo_branco">
+				<label for="url">Digite sua url:</label>
+				<input type="url" id="senha" name="url" placeholder="https:\\sua.url.com">
+			</p>
+			
+			<p class="Fundo_branco">
+				<label for="select">Selecione alguma opção:</label>
+				<select id="select" name="select">
+					<optgroup label="Teste 0">
+						<option value="Alguma coisa 0" label="Alguma coisa 0">
+						<option value="Alguma coisa 1" label="Alguma coisa 1">
+						<option value="Alguma coisa 2" label="Alguma coisa 2" desabled>
+						<option value="Alguma coisa 3" label="Alguma coisa 3" select>
+						<option value="Alguma coisa 4" label="Alguma coisa 4">
+					</optgroup>
+					<optgroup label="Teste 1">
+						<option value="Alguma coisa 5" label="Alguma coisa 5">
+						<option value="Alguma coisa 6" label="Alguma coisa 6">
+						<option value="Alguma coisa 7" label="Alguma coisa 7" desabled>
+						<option value="Alguma coisa 8" label="Alguma coisa 8">
+						<option value="Alguma coisa 9" label="Alguma coisa 9">
+					</optgroup>
+				</select>
+			</p>
+				<label for="textarea">Textarea:</label>
+				<textarea name="textarea" id="textarea" rows="3" cols="10" placeholder="Texto de exemplo">
+				</textarea>
+			<p>
+				
+			</p>
+			<p class="Fundo_branco">
+				<label for="search">Sua busca:</label>
+				<input type="search" id="search" name="search" placeholder="Buscar jogos">
+			</p>
+
+			<p class="Fundo_branco">
+				<label for="numero">Seu numero:</label>
+				<input type="number" id="email" name="numero" placeholder="Digite um número" min="0" max="9" step="0.5">
+			</p>
+
+			<p class="Fundo_branco">
+				<button type="reset">Resetar</button>
+				<button type="submit">Salvar</button>
+			</p>
+			
+		</form>
+
+	</section>
 </body>
-
 <html>
 
 
