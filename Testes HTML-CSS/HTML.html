@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <title title="Clique aqui para mais informações" >Teste</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="C:\Users\Hilster\Pictures\F5IdMbpWgAA1Ctw.png" type="image/x-icon">
 </head>
-
 <body>
 	<h1 id="titulo-um" class="Fundo1">Olá Mundo</h1>
 	<p id="texto" class = "Teste"><i>Teste</i> de HTML</p>
@@ -89,7 +88,7 @@ dados.to_excel('Cosmeticos.xlsx', index=False)  # Isso criará um arquivo Excel 
 			<li>Item 1</li>
 		</ol>
 		<ul>
-			<li class="Mudar">Item 1</li>
+			<li class="Mudar" title="Clique aqui para mais informações">Item 1</li>
 			<li class="Mudar">Item 2</li>
 			<li class="Mudar">Item 3</li>
 		</ul>
@@ -103,12 +102,24 @@ dados.to_excel('Cosmeticos.xlsx', index=False)  # Isso criará um arquivo Excel 
 		<li><a href="#">Home</a></li>
 		
 	</nav>
-	<div class="caixa_especial">
-		<p id="p_caixa_especial" class="Fundo_branco">
-			Aqui vem meu texto
-		</p>
-	</div>
 
+	<div class="pai_caixa_especial" >
+		<div class="caixa_especial">
+			<p id="p_caixa_especial" class="Fundo_branco" title="Informação secreta">
+				Aqui vem meu texto
+			</p>
+		</div>
+		<div class="caixa_especial">
+			<p id="p_caixa_especial" class="Fundo_branco" title="Informação secreta 2">
+				Aqui vem meu texto 2
+			</p>
+		</div>
+		<div class="caixa_especial">
+			<p id="p_caixa_especial" class="Fundo_branco" title="Informação secreta 3">
+				Aqui vem meu texto 3
+			</p>
+		</div>
+	</div>
 	<table>
 		<thead>
 			<tr>
