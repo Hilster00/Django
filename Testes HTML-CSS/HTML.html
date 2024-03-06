@@ -245,7 +245,7 @@ dados.to_excel('Cosmeticos.xlsx', index=False)  # Isso criará um arquivo Excel 
 
 			<p class="Fundo_branco">
 				<label for="email">Seu e-mail:</label>
-				<input type="email" id="email" name="email" value="hilsterb.santos@gmail.com" placeholder="email@gmail.com" required>
+				<input type="email" id="email" name="email" value="email@gmail.com" placeholder="email@gmail.com" required>
 			</p>
 
 			<p class="Fundo_branco">
@@ -323,10 +323,9 @@ dados.to_excel('Cosmeticos.xlsx', index=False)  # Isso criará um arquivo Excel 
 		<p>A data de hoje é <time datetime="2024-03-05">5 de março de 2024</time>.</p>
 		<progress value="50" max="100">50%</progress>
 		<menu type="context">
-  		<menuitem onclick="alert 'Alerta' ">Ação 1</menuitem>
-  		<menuitem onclick="alert 'Alerta 2' ">Ação 2</menuitem>
+  			<menuitem onclick="alert('Clicou')">Alerta</menuitem>
 		</menu>
-
+		<button type="button" onclick="alert('Clicou no Botão')">Botão</button>
 	
 	</section>
 	<br>
