@@ -8,7 +8,11 @@ h1:hover{
 p{
 	background: green;
 }
-
+meter {
+        font-size: 24px; /* Define o tamanho da fonte */
+        width: 200px; /* Define a largura do medidor */
+        height: 30px; /* Define a altura do medidor */
+}
 
 table{
 	border-collapse: collapse;
