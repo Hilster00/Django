@@ -267,7 +267,7 @@ dados.to_excel('Cosmeticos.xlsx', index=False)  # Isso criará um arquivo Excel 
 			
 			<p class="Fundo_branco">
 				<label for="url">Digite sua url:</label>
-				<input type="url" id="senha" name="url" placeholder="https:\\sua.url.com">
+				<input type="url" id="url" name="url" placeholder="https:\\sua.url.com" disabled>
 			</p>
 			
 			<p class="Fundo_branco">
@@ -276,14 +276,14 @@ dados.to_excel('Cosmeticos.xlsx', index=False)  # Isso criará um arquivo Excel 
 					<optgroup label="Teste 0">
 						<option value="Alguma coisa 0" label="Alguma coisa 0">
 						<option value="Alguma coisa 1" label="Alguma coisa 1">
-						<option value="Alguma coisa 2" label="Alguma coisa 2" desabled>
-						<option value="Alguma coisa 3" label="Alguma coisa 3" select>
-						<option value="Alguma coisa 4" label="Alguma coisa 4">
+						<option value="Alguma coisa 2" label="Alguma coisa 2" disabled>
+						<option value="Alguma coisa 3" label="Alguma coisa 3" >
+						<option value="Alguma coisa 4" label="Alguma coisa 4" selected>
 					</optgroup>
 					<optgroup label="Teste 1">
 						<option value="Alguma coisa 5" label="Alguma coisa 5">
 						<option value="Alguma coisa 6" label="Alguma coisa 6">
-						<option value="Alguma coisa 7" label="Alguma coisa 7" desabled>
+						<option value="Alguma coisa 7" label="Alguma coisa 7" disabled>
 						<option value="Alguma coisa 8" label="Alguma coisa 8">
 						<option value="Alguma coisa 9" label="Alguma coisa 9">
 					</optgroup>
@@ -302,7 +302,7 @@ dados.to_excel('Cosmeticos.xlsx', index=False)  # Isso criará um arquivo Excel 
 
 			<p class="Fundo_branco">
 				<label for="numero">Seu numero:</label>
-				<input type="number" id="email" name="numero" placeholder="Digite um número" min="0" max="9" step="0.5">
+				<input type="number" id="num" name="numero" placeholder="Digite um número" min="0" max="9" step="0.5">
 			</p>
 
 			<p class="Fundo_branco">
@@ -311,24 +311,38 @@ dados.to_excel('Cosmeticos.xlsx', index=False)  # Isso criará um arquivo Excel 
 			</p>
 			<p class="Fundo_branco">
 				<label for="tel">Telefone:</label>
-				<input type="tel" id="tel" name="tel" placeholder="(11) 1111-1111">
+				<input type="tel" id="tel" name="tel" placeholder="(11)91111-1111" pattern="([0-9]{2})9[0-9]{4}-[0-9]{4}">
+			</p>
+			<p class="Fundo_branco">
+				<label for="text2">Teste:</label>
+				<input type="text" id="text2" name="textoqualquer" placeholder="Texto Exemplo" maxlength=13>
 			</p>
 			<p>Quantidade de café consumida hoje:</p>
 			<meter value="3" min="0" max="10">3 de 10</meter>
 			<details>
+				<summary>Clique para ver mais</summary>
+  				<p>Conteúdo adicional aqui</p>
+			</details>
+			<p class="Fundo_branco">
+				<div class="Mudar_input">
+				<label for="TextoNovo" meu_atributo="valor-2"> Caida de texto:</label>
+				<input type="text" id="TextoNovo"  placeholder="valor-1" name="texto_muda" meu_atributo="valor-1" value="SENHOR_H"></div>
+			
+			</p>
 		</form>
-		<summary>Clique para ver mais</summary>
-  		<p>Conteúdo adicional aqui</p>
-		</details>
+			
 		<p>A data de hoje é <time datetime="2024-03-05">5 de março de 2024</time>.</p>
 		<progress value="50" max="100">50%</progress>
 		<menu type="context">
   			<menuitem onclick="alert('Clicou')">Alerta</menuitem>
 		</menu>
+	
 		<button type="button" onclick="alert('Clicou no Botão')">Botão</button>
 	
 	</section>
 	<br>
+	
+	<a href="https://www.youtube.com" target="_blank" >Youtube</a>
 	<br>
 	<br>
 	<br>

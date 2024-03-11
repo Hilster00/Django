@@ -8,15 +8,75 @@ h1:hover{
 p{
 	background: green;
 }
-meter {
+p::selection{
+	background: black;
+	color: white;
+}
+input{
+	transition: all 300ms ease-in-out;
+}
+input:hover{
+	background: rgba(0, 255, 0, 0.3);
+	border: 2px solid  rgba(0, 255, 0, 0.5);
+}
+input:focus{
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	outlube: none;
+	border: 1px solid black;
+}
+input: disabled{
+	background: gray;
+	color: pink;
+}
+::placeholder{
+	color: rgba(125,125,0);
+}
+#senha::placeholder{
+	color: cyan;
+}
+button:hover{
+	background: rgba(0, 255, 0, 0.5);
+	border: 2px solid  rgba(0, 255, 0, 0.7);
+}
+meter{
         font-size: 24px; /* Define o tamanho da fonte */
         width: 200px; /* Define a largura do medidor */
         height: 30px; /* Define a altura do medidor */
 }
 
+/*visual do link*/
+a{
+	color: darkorange;
+}
+/*visual do link não visitado*/
+a:link{
+	color: cyan;
+
+}
+/*visual do link visitado*/
+a:visited{
+	color:purple;
+}
+a:active{
+	background: darkslategray;
+	color: white;
+	text-decoration: none;
+}
+
 table{
 	border-collapse: collapse;
 }
+
+/*[meu_atributo = "valor-2"]{
+ 	text-decoration-color: yellow;
+}*/
+
+
+.Mudar_input > #TextoNovo[value="SENHOR_H"]{
+	text-color: red;
+	background: green;
+}
+
 
 /* tags da tabela */
 table td, table th{
