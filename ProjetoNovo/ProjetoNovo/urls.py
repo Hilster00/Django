@@ -23,11 +23,17 @@ from django.shortcuts import render
 def home(request):
     print("HOME localhost")
     return HttpResponse("HOME")
+
 def home2(request):
+    
     return render(request,'Mahouno.html')
+
+def ainda_fazer(request):
+    return HttpResponse("Ainda não fiz")
 urlpatterns = [
     path('', home2),
-    path('admin/', admin.site.urls),
+    path('adminH/', admin.site.urls),
     path('SENHOR_H/', include('SENHOR_H.urls')),
+    path("portifolio/", ainda_fazer),
     
 ]

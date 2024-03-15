@@ -16,11 +16,13 @@ Including another URLconf
 """
 
 from django.urls import path, include
-from . import views
+from django.urls import re_path
+from SENHOR_H import views
 
 
 urlpatterns = [
     path('', views.SENHOR_H),
-    path('sr.h/', views.srh),
+    re_path(r'(?i)^sr\.h/$', views.srh),
     path("teste/", views.teste),
+    
 ]

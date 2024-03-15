@@ -1,0 +1,225 @@
+﻿/* efeitos aplicado as tags*/
+h1 {
+	background: rgba(0,0,255);			
+}
+h1:hover{
+	background: rgba(0,0,127,0.3);
+}
+p{
+	background: green;
+}
+p::selection{
+	background: black;
+	color: white;
+}
+input{
+	transition: all 300ms ease-in-out;
+}
+input:hover{
+	background: rgba(0, 255, 0, 0.3);
+	border: 2px solid  rgba(0, 255, 0, 0.5);
+}
+input:focus{
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	outlube: none;
+	border: 1px solid black;
+}
+input: disabled{
+	background: gray;
+	color: pink;
+}
+::placeholder{
+	color: rgba(125,125,0);
+}
+#senha::placeholder{
+	color: cyan;
+}
+button:hover{
+	background: rgba(0, 255, 0, 0.5);
+	border: 2px solid  rgba(0, 255, 0, 0.7);
+}
+meter{
+        font-size: 24px; /* Define o tamanho da fonte */
+        width: 200px; /* Define a largura do medidor */
+        height: 30px; /* Define a altura do medidor */
+}
+
+/*visual do link*/
+a{
+	color: darkorange;
+}
+/*visual do link não visitado*/
+a:link{
+	color: cyan;
+
+}
+/*visual do link visitado*/
+a:visited{
+	color:purple;
+}
+a:active{
+	background: darkslategray;
+	color: white;
+	text-decoration: none;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+/*[meu_atributo = "valor-2"]{
+ 	text-decoration-color: yellow;
+}*/
+
+
+.Mudar_input > #TextoNovo[value="SENHOR_H"]{
+	text-color: red;
+	background: green;
+}
+
+
+/* tags da tabela */
+table td, table th{
+	border: 1px solid  #ccc;
+	padding: 3px;
+	text-align: center;
+}
+
+table th{
+	background: gray;
+}
+table th:hover{
+	background: cyan;
+}
+table td:hover{
+	background: rgba(64,32,64,0.25);
+}
+
+
+/* tag da lista */
+nav ul{
+	display : flex;
+	list-style: none;
+	justify-content: center;
+}
+nav li a:hover{
+	bakcground: pink;
+	height : 50px;
+	color: rgba(255,0,255);
+	text-decoration:none;
+	cursor: url('H:\brawl_pass.png');
+}
+
+
+
+/* classe para aplicar fundo branco */
+.Fundo_branco{
+	background: rgba(0,0,0,0);
+}
+.Teste{
+	background: brown;
+}
+.NO {
+	text-decoration:none;
+}
+.Mudar{
+	padding: 10px 20px;
+	background: rgba(255,127,255);
+}
+.Mudar:hover{
+	background: rgba(127,64,127,0.5);
+}
+
+
+/* efeitos em id*/
+
+#titulo-um {
+	background: pink;
+}
+#titulo-um:hover{
+    	background: rgba(0,0,127,0.3);
+}
+
+#texto {
+	background: yellow;
+}
+
+
+#texto2 {
+	background: white;
+}
+#primeiro-paragrafo {
+	background: white;
+}
+#codigo {
+	background: white;
+}
+article{
+	text-align: center;
+}
+#LINK{
+	text-decoration:none;
+}
+
+
+
+#nome {
+	height: 40px;
+	width: 300px;
+	border: 3px solid black;
+	margin: 0 auto;
+	display: block;
+
+}
+#nome:hover {
+	background: rgba(32,16,32,0.13);
+	border: 3px solid rgba(150,16,222);
+}
+
+
+
+/* caixa especial efeitos*/
+
+/* caixas base*/
+.caixa_especial {
+	height: 40px;
+	background: rgba(30,60,90);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	
+}
+
+/*defoque em todas as caixas quando mouse passar em cima*/
+.pai_caixa_especial:hover .caixa_especial{
+	height: 20px;
+	background: rgba(24,48,72);
+}
+
+/*defoque no texto de todas as caixas quando mouse passar em cima*/
+.pai_caixa_especial:hover .caixa_especial #p_caixa_especial{
+	color: rgba(255,255,255,0.5);
+}
+
+/* foco na caixa que o mouse esta em cima*/
+.pai_caixa_especial:hover .caixa_especial:hover  {
+	height: 80px;
+	background: rgba(36,72,108);	
+}
+/* primeiro desfoca todas para que o efeito seja aplicada a todas, até as que vem antes*/
+/* e então aplica o efeito de foco na caixa selecionada */
+
+
+/* efeito aplicado ao texto dentro da caixa especial selecionada*/
+.pai_caixa_especial .caixa_especial:hover #p_caixa_especial{
+	color: rgba(255,0,0);
+}
+/* efeito aplicado ao texto dentro da caixa selecionada, se o texto também for selecionado*/
+.caixa_especial:hover #p_caixa_especial:hover{
+	color: rgba(255,0,0,0.7);
+	cursor: url('./transparencia.png'), auto;
+	/*cursor: default;*/
+
+    	
+}
+

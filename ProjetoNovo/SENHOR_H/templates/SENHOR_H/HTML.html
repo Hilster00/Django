@@ -1,11 +1,11 @@
-﻿<!doctype html>
+﻿{% load static %}<!doctype html>
 
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title title="Clique aqui para mais informações" >Teste</title>
-    <link rel="stylesheet" href=r".\styles.css">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
     <link rel="icon" href="C:\Users\Hilster\Pictures\F5IdMbpWgAA1Ctw.png" type="image/x-icon">
 </head>
 <body>
@@ -342,7 +342,7 @@ dados.to_excel('Cosmeticos.xlsx', index=False)  # Isso criará um arquivo Excel 
 	</section>
 	<br>
 	
-	<a href="http://127.0.0.1:8000/SENHOR_H/">Youtube</a>
+	<a href="https://www.youtube.com" target="_blank" >Youtube</a>
 	<br>
 	<br>
 	<br>

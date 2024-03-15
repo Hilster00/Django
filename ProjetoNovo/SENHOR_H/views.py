@@ -9,7 +9,7 @@ def SENHOR_H(request):
 
 def srh(request):
     print("teste simples 2")
-    return HttpResponse("AGORA Sr.H")
+    return HttpResponse("AGORA Sr.H", )
 def teste(request):
     print("Teste")
     return render(request,"SENHOR_H/HTML.html")
