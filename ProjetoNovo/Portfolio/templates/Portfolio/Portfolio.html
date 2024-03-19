@@ -1,0 +1,131 @@
+﻿{% load static %}
+<!doctype HTML>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title >Portifólio</title>
+	<link rel="stylesheet" href="{% static 'Portfolio/styles.css' %}">
+	<link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" type="image/x-icon">
+
+</head>
+
+<body>
+	<h1 style="text-align: center">Hilster B. Santos</h1>
+	<! -- Parte dos dados pessoais-->
+	<div style="display:flex;">
+		<a href="https://github.com/Hilster00" target="_blank" style="display:flex; margin: 10px;" title="Hilster Barbosa Samtos, Dev Python">
+			<img id="ImagemPerfil" src="{% static 'Portfolio/FotoPessoal.jpg' %}" width="320" height="320">
+		</a>
+		<div>
+   			<p style="white-space: pre-wrap; text-align: justify;">	Sou programador python, com conhecimento em várias bibliotecas, além de criar algumas libs próprias para resolver alguns problemas pessoas, além de desenvolver alguns projetos como forma de treino pessoa, como uma cálculadora <a class="LinksPessoais" target="_blank" href="https://github.com/Hilster00/Calculadoras">python</a>, onde a minha primeira versão foi uma cálculadora simples que todo programador faz no começo, porém insatisfeito com a forma da entrada de dados, me empenhei em criar uma que conseguia interpretar as entradas e então fazer as operações na ordem correta, com isso permitindo que ela possa ter várias operações em um único cálculo, permitindo ter cálculos muito mais complexos, para o seu desenvolvimente tive que aplicar conhecimentos adquiridos em <span title="LFA">Linguagens Formais e Autômatos</span> e Compiladores.
+	Além disso me dediquei a outros projetos, como <a class="LinksPessoais" target="_blank" href="https://github.com/Hilster00/Jogos">jogos</a> que desenvolvi seja em java ou em python, como o jogo de <a class="LinksPessoais" target="_blank" href="https://github.com/Hilster00/Jogos/tree/main/Java/Xadrez">xadrez</a> que desenvolvi, além de outros projetos não relacionados a jogos, como <a class="LinksPessoais" target="_blank" href="https://github.com/Hilster00/ManipulacaoArquivos">manipulação de arquivos</a>, onde eu escondo texto dentro dos bytes de um arquivo pdf, ou estudos de ponteiros e estruturas de dados além de <a class="LinksPessoais" target="_blank" href="https://github.com/Hilster00/Sorting-Algorithms">algoritmos de ordenação</a> que foram desenvolvidos em Python, C e Java. Também já cheguei a desenvolver programas em shell para facilitar algumas tarefas, como instalação de bibliotecas específicas, inicialização de programas que é feita via terminal entre outros.
+			</p>
+		</div>	
+	</div>
+	
+	<! -- Links de contato -->
+	<a href="https://github.com/Hilster00" target="_blank"><img class="img-topo"  alt="Hilster00" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"></a>
+   	<a href="https://www.linkedin.com/in/hilster00/" target="_blank"><img class="img-topo"  alt="Hilster00" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"></a>
+	
+	<! -- Linguagens e outros conhecimentos -->
+	<br>
+	<br>
+	<section>
+	<div class="Pai-Icones">
+	<label for="Linguagens">Linguagens</label>
+	<div id="Linguagens" class="Icones"> 
+		<img class="Icone" alt="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" title="Python Experiência: 4 anos"/>
+  		<img class="Icone" alt="Java"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"  title="Java Experiência: 3 anos"/>
+		<img class="Icone" alt="C"      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" title="C Experiência: 2 anos"/>
+		<img class="Icone" alt="PowerShell" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg" title="Powershell Experiência: 2 anos" />
+		<img class="Icone" alt="HTML5"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML 5 Experiência: 6 meses"/>
+ 		<img class="Icone" alt="CSS"    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" title="CSS 3 Experiência: 6 meses"/>  
+	</div>
+	<label for="BD">Banco De Dados</label>
+	<div id="BD" class="Icones">
+		<img class="Icone" alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" title="MySQL Experiência: 2 anos" /> 
+	</div>
+	<label for="Framework">Framework</label>
+	<div id="Framework" class="Icones">
+		<img class="Icone" alt="Numpy" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" title="Numpy: 2 ano"/>
+	</div>
+	<label for="Programas">Programas:</label>
+	<div id="Programas" class="Icones">
+		<img class="Icone" alt="Word" src="{% static 'Portfolio/microsoft/power_point.png' %}" title="Word Experiência: 5 anos"/>
+		<img class="Icone" alt="Word" src="{% static 'Portfolio/microsoft/word.png' %}" title="Word Experiência: 5 anos"/>
+		<img class="Icone" alt="Excel" src="{% static 'Portfolio/microsoft/excel.png' %}" title="Excel Experiência: 5 anos"/>
+		<img class="Icone" alt="Power BI" src="{% static 'Portfolio/microsoft/Power_BI.png' %}" title="Power BI Experiência: 6 meses"/>
+	</div>
+	</div>
+	</section>
+	<br>
+	<! -- Formações e experiências -->
+	<div id="Informacoes">
+	<p>
+	Formação Acadêmica:
+		<ul>
+		<li>
+			Técnico em Informática: (<time datetime="2017-01-01">1 de Janeiro de 2017</time> a <time datetime="2019-12-31">31 de Dezembro de 2019</time>)
+		</li>
+		<li>
+			Ciência da Computação: (<time datetime="2020-01-01">1 de Janeiro de 2020</time> a <time datetime="2019-06-30">30 de Junho de 2024</time>)
+		</li>
+		</ul>
+	Experiências:
+		<ul>
+		<li>
+			Professor de informática básica: (<time datetime="2019-08-01">1 de Agosto de 2019</time> a <time datetime="2019-11-30">30 de Novembro de 2019</time>)
+		</li>
+		<li>
+			Monitor de Redes de Computadores: (<time datetime="2017-01-01">1 de Janeiro de 2017</time> a <time datetime="2019-12-31">31 de Dezembro de 2019</time>)
+		</li>
+		<li>
+			Monitor de Banco de Dados: (<time datetime="2017-01-01">1 de Janeiro de 2017</time> a <time datetime="2019-12-31">31 de Dezembro de 2019</time>)
+		</li>
+		</ul>
+	Principais Projetos:
+		<ul>
+		<li><a class="LinksPessoais" target="_blank" href="https://github.com/Hilster00/Calculadoras">Calculadora com interpretador embutido, aplicando os conhecimentos adquiridos em LFA (Linguagens Formais e Autômatos) e Compiladores</a></li>
+		<li><a class="LinksPessoais" target="_blank" href="https://github.com/Hilster00/Ordenacao/tree/main/C">Aplicação prática dos principais métodos de ordenação e utilização de ponteiros aprendidos em Estruturas de Dados</a></li>
+		<li><a class="LinksPessoais" target="_blank" href="https://github.com/Hilster00/ManipulacaoArquivos">Ocultação de textos em um arquivo PDF aplicando as noções de manipulação de bytes dos arquivos</a></li>
+		<li><a class="LinksPessoais" target="_blank" href="https://github.com/Hilster00/Jogos">Treino prático de diversos recursos de diferentes linguagens ao desenvolver jogos</a></li>
+		<li><a class="LinksPessoais" target="_blank" href="https://github.com/Hilster00/Estudos_Python">Estudo sobre algumas bibliotecas disponíveis para Python, explorando algumas funcionalidades</a></li>
+		</ul>
+	Habilidades:
+		<ul>
+		<li>Conhecimento em Python, Java, C, HTML, CSS e Shell</li>
+		<li>Conhecimento básico em compiladores</li>
+		<li>Conhecimentos básicos em manipulação de bytes</li>
+		<li>Conhecimentos em Pesquisa Operacional</li>
+		<li>Conhecimentos em pacote office</li>
+		</ul>
+	Conquistas:
+		<ul>
+		<li>Menção Honrosa na <span title="OBMEP">Olimpíada Brasileira de Matemática das Escolas Públicas</span> (<time datetime="2014">2014</time>)</li>
+		<li>Participação na Competição WTic (<time datetime="2021">2021</time>)</li>
+		<li>Recebedor de Voucher para Certificação AWS pelo Grupo Boticário (<time datetime="2023">2023</time>)</li>
+		<li>Participação no <span title="PIBIC">Programa Institucional de Bolsas de Iniciação Científica</span> (<time datetime="2018">2018</time> a <time datetime="2019">2019</time>) </li>
+		</ul>
+	</p>
+	</div>
+	<br>
+	<br>
+
+	<! -- rodape -->
+	<footer>
+		<div style="display : flex; align-items: center;">
+		<div style="margin: 15px;">
+        	<a class="LinksPessoais" href="https://wa.me/64999786370" target="_blank">Whatsapp: (64) 99978-6370</a>
+		<br>
+		<a class="LinksPessoais" href="mailto:hilsterb.santos@gmail.com" target="_blank">E-mail: hilsterb.santos@gmail.com</a>
+		</div>
+
+		<a href="https://github.com/Hilster00" target="_blank"><img class="img-rodape"  alt="Hilster00" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"></a>
+   	 	<a href="https://www.linkedin.com/in/hilster00/" target="_blank"><img class="img-rodape"  alt="Hilster00" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"></a>
+ 		</div>
+
+	</footer>
+</body>
+</html>

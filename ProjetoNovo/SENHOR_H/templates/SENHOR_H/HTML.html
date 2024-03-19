@@ -1,0 +1,355 @@
+﻿{% load static %}
+<!doctype html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title title="Clique aqui para mais informações" >Teste</title>
+    <link rel="stylesheet" href="{% static 'SENHOR_H\styles.css' %}">
+    <link rel="icon" href="C:\Users\Hilster\Pictures\F5IdMbpWgAA1Ctw.png" type="image/x-icon">
+</head>
+<body>
+	<h1 id="titulo-um" class="Fundo1">Olá Mundo</h1>
+	<p id="texto" class = "Teste"><i>Teste</i> de HTML</p>
+	<h1 id="titulo-dois" class="Fundo1">Olá Mundo 2</h1>
+	<p id="texto2" class = "Teste"><b>Teste</b> de HTML5</p>
+	<p id="texto3" class = "Teste"><strong><small>Te</small>ste</strong> de HTML5</p>
+
+
+	<p id= "primeiro-paragrafo">Eu sou o <em>SENHOR_H</em></p>
+	<a id="LINK" href="https://github.com/Hilster00" target="_blank"><del>Meu</del> <ins class="NO">GIT</ins></a>
+	
+	
+	<p>2<sup>2</sup></p>
+	<p>CO<sub>2</sub><br>H<sub>2</sub>O<sub>2</sub></p>
+	<p>Meu texto<q cite="https://github.com/Hilster00">AQUI</q></p>
+	
+	<p>Texto 1<hr>Texto 2</p>
+
+	<pre id="codigo">
+	<code>
+
+import pandas as pd
+
+# Ler os dados do arquivo TXT
+dados = pd.read_csv('Cosmeticos.txt', delimiter='|')  # Supondo que o arquivo seja separado por tabulação
+
+# Escrever os dados em um arquivo Excel
+dados.to_excel('Cosmeticos.xlsx', index=False)  # Isso criará um arquivo Excel chamado 'Starr Drops.xlsx' sem o índice
+
+	</code></pre>
+
+	<p><span style="color:red;">Oi</span> meu nome é Hilster</p>
+	<div class="teste">Teste 'div'</div>
+	<h1>H1</h1>
+	<h2>H2</h2>
+	<h3>H3</h3>
+	<h4>H4</h4>
+	<h5>H5</h5>
+	<h6>H6</h6>
+	
+
+	<header>
+		<h2>TESTE HEADER</h2>
+	</header>
+
+	<div style="width: 120px; height: 120px; background: red;">
+		<div style="width: 40px; height: 40px; background: blue;">
+		</div>
+		<div style="width: 40px; height: 40px; background: yellow;">
+		</div>
+		<div style="width: 40px; height: 40px; background: darkcyan;">
+		</div>
+	</div>
+	<article>
+	<h3>Produto</h3>
+	<p>Aqui vem meu texto</p>
+	</article>
+
+	<a href="https://github.com/Hilster00" target="_blank">
+	<img src="C:\Users\Hilster\Pictures\F05uGinWIAIp851.png" width="320" height="320">
+	</a>
+	<a href="https://github.com/Hilster00" target="_blank>
+	<img src="C:\Users\Hilster\Pictures\F05uGinWYAUAIBB.png" width="320" height="320">
+
+	</a>
+	<a href="C:\Users\Hilster\Pictures\" target="_blank">
+	<img src="C:\Users\Hilster\Pictures\F05uGisWIAEUXpv.png" width="320" height="320">
+	</a>
+	<img src="C:\Users\Hilster\Pictures\F05uGisX0AA-yAW.png" alt="Logo Brawl Stars" width="320" height="320">
+	<br>
+	<img src="C:\Users\Hilster\Pictures\F05uN9eXoAE4o2X.png" alt="Teste" width="320" height="320">
+	<img src="C:\Users\Hilster\Pictures\F05uN99XsAMkAiw.png" alt="Teste 2" width="320" height="320">
+	
+	
+	
+	<nav>
+		<ol  type="1" start="13">
+			<li>Item 1</li>
+		</ol>
+		<ul>
+			<li class="Mudar" title="Clique aqui para mais informações">Item 1</li>
+			<li class="Mudar">Item 2</li>
+			<li class="Mudar">Item 3</li>
+		</ul>
+		<dl>
+			<dt> Star power</dt>
+			<dd> Descrição</dd>
+		</dl>
+
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Home</a></li>
+		
+	</nav>
+
+	<div class="pai_caixa_especial" >
+		<div class="caixa_especial">
+			<p id="p_caixa_especial" class="Fundo_branco" title="Informação secreta">
+				Aqui vem meu texto
+			</p>
+		</div>
+		<div class="caixa_especial">
+			<p id="p_caixa_especial" class="Fundo_branco" title="Informação secreta 2">
+				Aqui vem meu texto 2
+			</p>
+		</div>
+		<div class="caixa_especial">
+			<p id="p_caixa_especial" class="Fundo_branco" title="Informação secreta 3">
+				Aqui vem meu texto 3
+			</p>
+		</div>
+	</div>
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th>Coluna 1</th>
+				<th>Coluna 2</th>
+				<th>Coluna 3</th>
+				<th>Coluna 4</th>
+				<th>Coluna 5</th>
+			</tr>
+		</thead>
+		<body>
+			<tr>	<th>Linha 0</th>
+				<td>Célula 1</th>
+				<td>Célula 2</th>
+				<td>Célula 3</th>
+				<td>Célula 4</th>
+				<td>Célula 5</th>
+			</tr>
+			<tr>
+				<th>Linha 1</th>
+				<td colspan="2">Célula 1/2</th>
+				<td>Célula 3</th>
+				<td>Célula 4</th>
+				<td>Célula 5</th>
+			</tr>
+			<tr>
+				<th>Linha 2</th>
+				<td colspan="3">Célula 1/2/3</th>
+				<td>Célula 4</th>
+				<td>Célula 5</th>
+			</tr>
+			<tr>
+				<th>Linha 3</th>
+				<td>Célula 1</th>
+				<td colspan="3">Célula 2/3/4</th>
+				<td>Célula 5</th>
+			</tr>
+			<tr>
+				<th>Linha 4</th>
+				<td>Célula 1</th>
+				<td>Célula 2</th>
+				<td colspan="3">Célula 3/4/5</th>	
+			</tr>
+			<tr>
+				<th>Linha 5</th>
+				<td>Célula 1</th>
+				<td>Célula 2</th>
+				<td>Célula 3</th>
+				<td colspan="2">Célula 4/5</th>	
+			</tr>
+			<tr>
+				<th>Linha 6</th>
+				<td>Célula 1</th>
+				<td>Célula 2</th>
+				<td>Célula 3</th>
+				<td>Célula 4</th>
+				<td>Célula 5</th>
+			</tr>
+		</body>
+	</table>
+	<section>
+		<form action="#" method="get" target="_blank" autocomplete="off">
+			<p>Digite seu Nome</p>
+
+			<p  id="campo_nome" class="Fundo_branco">
+				<label for="nome"> Nick: </label>
+				<input type="text" id="nome" name="nome" placeholder="Digite o seu nome" value="SENHOR_H" required>
+			</p>
+
+			<p class="Fundo_branco">
+			<label for="dev"> Sou um dev </label>
+				<input type="checkbox" id="dev" name="dev" value="true" checked>
+			</p>
+
+			<p class="Fundo_branco">
+			<label for="SrH"> Sou o SENHOR_H </label>
+				<input type="checkbox" id="SrH" name="SrH" value="true" checked required>
+			</p>
+
+
+			<p class="Fundo_branco">
+				<label for="dev_c">Sou programador C</label>
+				<input type="radio" id="dev_c" name="feliz" value="True">
+				<br>
+				<label for="dev_java">Sou programador Java</label>
+				<input type="radio" id="dev_java" name="feliz" value="True">
+				<br>
+				<label for="feliz">Sou feliz</label>
+				<input type="radio" id="feliz" name="feliz" value="True" checked>
+			</p>
+
+
+			<p class="Fundo_branco">
+				<label for="problemas_mentais">Não tenho problemas mentais</label checked>
+				<input type="radio" id="problemas_mentais" name="problemas_mentais" value="True">
+				<br>
+				<label for="psicologia">Estudo Psicologia</label>
+				<input type="radio" id="psicologia" name="problemas_mentais" value="True">
+				<br>
+				<label for="matematica">Estudo Matemática</label>
+				<input type="radio" id="matematica" name="problemas_mentais" value="True" >
+			</p>
+
+
+			<p class="Fundo_branco">
+
+				<label for="nascimento">Data de nascimento:</label>
+				<input type="date" id="nascimento" name="nascimento" value="2001-08-08">
+				<br>
+				<label for="data">Data:</label>
+				<input type="datetime-local" id="data" name="data" value="2001-08-08T17:15">
+				<br>
+				<label for="hora">Data:</label>
+				<input type="time" id="hora" name="hora" value="17:15:33">
+				
+			</p>
+
+			<p class="Fundo_branco">
+				<label for="cor">Cor</label>
+				<input type="color" id="cor" name="cor" value="#003d66">
+			</p>
+
+			<p class="Fundo_branco">
+				<label for="email">Seu e-mail:</label>
+				<input type="email" id="email" name="email" value="email@gmail.com" placeholder="email@gmail.com" required>
+			</p>
+
+			<p class="Fundo_branco">
+				<label for="file">Um arquivo:</label>
+				<input type="file" id="arquivo" name="arquivo" accept=".png, .svg, image/*" multiple>
+			</p>
+
+			<p class="Fundo_branco">
+				<label for="senha">Digite sua senha:</label>
+				<input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+			</p>
+
+
+			<p class="Fundo_branco">
+				<label for="range">range:</label>
+				<input type="range" id="range" name="range" min="0" max="9" step="0.5" value="0">
+			</p>
+
+			
+			<p class="Fundo_branco">
+				<label for="url">Digite sua url:</label>
+				<input type="url" id="url" name="url" placeholder="https:\\sua.url.com" disabled>
+			</p>
+			
+			<p class="Fundo_branco">
+				<label for="select">Selecione alguma opção:</label>
+				<select id="select" name="select">
+					<optgroup label="Teste 0">
+						<option value="Alguma coisa 0" label="Alguma coisa 0">
+						<option value="Alguma coisa 1" label="Alguma coisa 1">
+						<option value="Alguma coisa 2" label="Alguma coisa 2" disabled>
+						<option value="Alguma coisa 3" label="Alguma coisa 3" >
+						<option value="Alguma coisa 4" label="Alguma coisa 4" selected>
+					</optgroup>
+					<optgroup label="Teste 1">
+						<option value="Alguma coisa 5" label="Alguma coisa 5">
+						<option value="Alguma coisa 6" label="Alguma coisa 6">
+						<option value="Alguma coisa 7" label="Alguma coisa 7" disabled>
+						<option value="Alguma coisa 8" label="Alguma coisa 8">
+						<option value="Alguma coisa 9" label="Alguma coisa 9">
+					</optgroup>
+				</select>
+			</p>
+				<label for="textarea">Textarea:</label>
+				<textarea name="textarea" id="textarea" rows="3" cols="10" placeholder="Texto de exemplo">
+				</textarea>
+			<p>
+				
+			</p>
+			<p class="Fundo_branco">
+				<label for="search">Sua busca:</label>
+				<input type="search" id="search" name="search" placeholder="Buscar jogos">
+			</p>
+
+			<p class="Fundo_branco">
+				<label for="numero">Seu numero:</label>
+				<input type="number" id="num" name="numero" placeholder="Digite um número" min="0" max="9" step="0.5">
+			</p>
+
+			<p class="Fundo_branco">
+				<button type="reset">Resetar</button>
+				<button type="submit">Salvar</button>
+			</p>
+			<p class="Fundo_branco">
+				<label for="tel">Telefone:</label>
+				<input type="tel" id="tel" name="tel" placeholder="(11)91111-1111" pattern="([0-9]{2})9[0-9]{4}-[0-9]{4}">
+			</p>
+			<p class="Fundo_branco">
+				<label for="text2">Teste:</label>
+				<input type="text" id="text2" name="textoqualquer" placeholder="Texto Exemplo" maxlength=13>
+			</p>
+			<p>Quantidade de café consumida hoje:</p>
+			<meter value="3" min="0" max="10">3 de 10</meter>
+			<details>
+				<summary>Clique para ver mais</summary>
+  				<p>Conteúdo adicional aqui</p>
+			</details>
+			<p class="Fundo_branco">
+				<div class="Mudar_input">
+				<label for="TextoNovo" meu_atributo="valor-2"> Caida de texto:</label>
+				<input type="text" id="TextoNovo"  placeholder="valor-1" name="texto_muda" meu_atributo="valor-1" value="SENHOR_H"></div>
+			
+			</p>
+		</form>
+			
+		<p>A data de hoje é <time datetime="2024-03-05">5 de março de 2024</time>.</p>
+		<progress value="50" max="100">50%</progress>
+		<menu type="context">
+  			<menuitem onclick="alert('Clicou')">Alerta</menuitem>
+		</menu>
+	
+		<button type="button" onclick="alert('Clicou no Botão')">Botão</button>
+	
+	</section>
+	<br>
+	
+	<a href="https://www.youtube.com" target="_blank" >Youtube</a>
+	<br>
+	<br>
+	<br>
+	<br>
+</body>
+<html>
+
+
+
