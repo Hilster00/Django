@@ -23,6 +23,5 @@ from SENHOR_H import views
 urlpatterns = [
     path('', views.SENHOR_H),
     re_path(r'(?i)^sr\.h/$', views.srh),
-    path("teste/", views.teste),
-    
+    path("teste/", views.teste),    
 ]

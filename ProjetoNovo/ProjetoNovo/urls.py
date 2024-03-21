@@ -19,6 +19,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.conf.urls import handler404
 
 def home(request):
     print("HOME localhost")
@@ -27,14 +28,19 @@ def home(request):
 def home2(request):
     
     return render(request,'Mahouno.html')
+def home_final(request):
+    return render(request,'home.html')
 
 def ainda_fazer(request):
     return HttpResponse("Ainda não fiz")
+def not_found(request):
+    return render(request,"404.html")
 urlpatterns = [
-    path('', home2),
+    path('', home_final),
     path('adminH/', admin.site.urls),
     path('SENHOR_H/', include('SENHOR_H.urls')),
     path("portfolio/", include('Portfolio.urls')),
-     path("Portfolio/", include('Portfolio.urls'))
-    
+    path("Portfolio/", include('Portfolio.urls')),
 ]
+
+
