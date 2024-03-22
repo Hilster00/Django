@@ -1,0 +1,71 @@
+﻿HTML{
+	/*background-image: url('https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8LmFpfGVufDB8fDB8fHww');
+	background-size: cover;
+	background-repeat: no-repeat;*/
+	background : gray;
+}
+#Informacoes{
+	background: rgba(65, 65, 65, 0.75);
+
+}
+.img-rodape{
+	height: 40px;
+	width: 40px;
+	margin: 10px;
+}
+.img-topo{
+	height: 40px;
+	width: 40px;
+	margin: 10px;
+}
+a{
+	text-decoration: none;
+}
+.LinksPessoais:link{
+	color: rgba(255, 255, 255, 0.95);
+}
+.LinksPessoais:visited{
+	color: rgba(0,0,0, 1);
+}
+.LinksPessoais:active{
+	background: gray;
+	color: darkslategray;
+	text-decoration: none;
+}
+
+.Icone{
+	height: 60px;
+	width: 60px;
+	alingn: center;
+	margin: 5px;
+	transition: all 200ms ease-in-out;
+}
+.Icones{
+	align-items: center;
+	display: flex;
+	border-radius: 10px;
+	transition: all 500ms ease-in-out;
+}
+.Pai-Icones:hover .Icones:hover .Icone:hover{
+	height: 72px;
+	width: 72px;
+}
+.Pai-Icones:hover .Icones .Icone{
+	height: 48px;
+	width: 48px;
+}
+.Pai-Icones:hover .Icones:hover .Icone{
+	height: 60px;
+	width: 60px;
+}
+.Pai-Icones:hover .Icones:hover{
+	height: 94px;
+	background: rgba( 255, 255, 255, 0.5);
+}
+.Pai-Icones{
+	align-items: center;
+	height: 330px;
+}
+#ImagemPerfil{
+	border-radius: 30px;
+}
